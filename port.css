@@ -7,8 +7,8 @@
 }
 .container{
     position: relative;
-    width: 1350px;
-    height: 1350px;
+    width:100%;
+    height: 100vh;
     /* 1vh=1% */
     background-color: white;
 }
@@ -22,7 +22,8 @@ nav{
     margin-left: 80px;
     align-items: center;
     justify-content: space-between;
-    margin-top: -780px;
+    margin-top: -55%;
+  
 }
 nav .logo{
     width:80px;
@@ -50,11 +51,11 @@ syntax
 selector:pseudo-class-name{property:value}
  */
  nav ul li a:hover{
-    color: rgb(245, 74, 7);
+    color: rgb(211, 255, 51);
  }
  .title{
     margin-left: 8%;
-    margin-top: 15%;
+    margin-top: 13%;
     align-items: center;
  }
  .title h1{
@@ -63,7 +64,7 @@ selector:pseudo-class-name{property:value}
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
  }
- .title span{ color: rgb(255, 255, 255);
+ .title span{ color: rgb(202, 238, 44);
     font-family: 'Times New Roman', Times, serif;
  }
  .title p{
@@ -74,14 +75,14 @@ selector:pseudo-class-name{property:value}
 
  }
  .title a{
-    background-color: black;
+    background-color:grey;
     padding: 10px 18px;
     text-decoration: none;
-    color: white;
+    color: rgb(12, 0, 0);
     font-weight: bold;
     display: inline-block;
     margin:30px 0;
-    border-radius: 5px;
+    border-radius: 10px;
  }
  .images{
     width: 45%;
@@ -95,13 +96,17 @@ selector:pseudo-class-name{property:value}
  .images img{
     width: 230px;
     height: 250px;
-
+   position: fixed;
     margin-top: 100px;
+    margin-left: 300px;
  }
  #about{
-   margin-left: 22%;
-   margin-top: 25%;
-   margin-right: 32%;
+  
+    padding: 20px 0;
+    margin-top: 300px;
+    padding:5% 5%;
+   
+   
    
  }
  .heading{
@@ -114,29 +119,35 @@ selector:pseudo-class-name{property:value}
  }
  .heading span{
    font-size: 22px;
-   color: rgb(90, 24, 90);
+   color: rgb(80, 13, 119);
+   font-weight: 500;
  }
  .about-content{
+ 
    display: grid;
    grid-template-columns: repeat(2,1fr);
    gap: 1rem;
    margin-top: 2rem;
  }
  .about-img img {
-   width:50%;
+   width:200px;
+   height: 250px;
    border: 2px solid black;
    border-radius: 10px;
-
+   margin-left:22%;
 
  }
  .about-text{
-   font-size: 18px;
-   font-weight: 500;
+   margin-left: -250px;
+   font-size: 20px;
+   font-weight: 900;
   align-items: center;
 
  }
  .information{
    margin: 1rem 0 1.4rem;
+   font-weight: 700;
+   color: rgb(70, 39, 5);
  }
  .information .name{
    display: flex;
@@ -152,74 +163,48 @@ selector:pseudo-class-name{property:value}
  html{
    scroll-behavior: smooth;
  }
- #skill{
-  margin-left: 8%;
-  margin-top: 13%;
-  margin-right: 8%;
+ .education{
+   margin-top: 5%;
+ 
+ }
+ .edu
+ {
+   margin-top: 30px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
+   padding: 5px;
+   margin-right: 200px;
+   font-family: 'Times New Roman', Times, serif;
+   margin-left: 200px;
+ }
+ .edu1 h2{
+   font-size: 25px;
+ }
+ .edu1 h5{
+   font-size: 15px;
+   color: rgb(99, 33, 2);
+ }
+ .edu2 h2{
+   font-size: 25px;
+ }
+ .edu2 h5{
+   font-size: 15px;
+   color: rgb(99, 33, 2);
+ }
+ .edu3 h2{
+   font-size: 25px;
+ }
+ .edu3 h5{
+   font-size: 15px;
+   color: rgb(99, 33, 2);
  }
  
- .skill-container{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
-  gap: 2rem;
- }
- .skill-img img{
-  width: 60%;
-  object-position: center;
-  padding: 3rem;
- }
- .bar-box{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  margin-bottom: 16px;
- }
- .bar-box h2{
-  font-size: 25px;
-  font-weight: 800;
-
- }
- .bar-box span{
-  font-size: 23px;
-  font-weight: 700;
- }
- .light-bar{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: rgb(191, 254, 44);
-  border-radius: 8px;
- }
- .percent-bar{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: rgb(104, 14, 228);
-  border-radius: 8px;
- }
- .html-bar{
-  width: 96%;
- }
- .css-bar{
-  width: 94%;
- }
- .cpp-bar{
-  width: 90%;
- }
- .c-bar{
-  width: 80%;
- }
  #contact{
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-top: 13%;
+   margin-top: 13%;
+   padding-left: 10%;
+   padding-right: 10%;
+ 
  }
  
  .IconDiv{
@@ -243,64 +228,33 @@ selector:pseudo-class-name{property:value}
     font-size: 20px;
  }
  .icon i:hover{
-    color: rgb(231, 151, 1);
+    color: rgb(4, 8, 44);
  }
  footer{
-    margin-top: 1rem;
-    font-weight: bolder;
+   height: 20px;
+   background-color: rgb(0, 0, 0);
+   color: #ffffff;
+    margin-top: 5px;
+    padding-left: 30%;
+    font-family: 'Times New Roman', Times, serif,cursive;
  }
 
-@media (min-width:300px){
-   .imgg{
-      width:1000px;
-      height: 750px;
-  }
-  nav{
+@media(max-width:1300px){
+   nav{
       display: flex;
-      width: 60%;
-      margin-left: 30px;
+      width: 85%;
+      margin-left: 80px;
       align-items: center;
       justify-content: space-between;
-      margin-top: -780px;
-  }
-  nav .logo{
-      width:60px;
-      height: 60px;
-      border-radius: 50%;
+      margin-top: -55%;
     
-      margin-right: 0px;
-      margin-top: 15px;
   }
-  nav ul li{
-      display: inline-block;
-      margin :10px 10px;
-      margin-left: 60px;
-      /* 10px top&bottom and 20px right&left */
-      
-  }
-  nav ul li a{
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      
-  }
-  /* pseudo class to get special effect in mouse hover
-  syntax
-  selector:pseudo-class-name{property:value}
-   */
-   nav ul li a:hover{
-      color: rgb(26, 1, 247);
-   }
-   .title{
-      margin-left: 5%;
-      margin-top: 18%;
-      align-items: center;
-   }
+  
    .title h1{
-      font-size: 40px;
+      font-size: 30px;
       
       color: rgb(255, 255, 255);
-      margin-bottom: 20px;
+      margin-bottom: 10px;
    }
    .title span{ color: rgb(255, 255, 255);
       font-family: 'Times New Roman', Times, serif;
@@ -309,18 +263,19 @@ selector:pseudo-class-name{property:value}
       color: #ffffff;
       line-height: 20px;
       font-family: 'Times New Roman', Times, serif;
-      line-height: 30px;
+      font-weight: 800;
   
    }
    .title a{
-      background-color: rgb(252, 167, 174);
+      margin-top: -10px;
+      background-color:rgb(224, 137, 137);
       padding: 10px 18px;
       text-decoration: none;
-      color: rgb(0, 0, 0);
+      color: rgb(12, 0, 0);
       font-weight: bold;
       display: inline-block;
       margin:30px 0;
-      border-radius: 5px;
+      border-radius: 10px;
    }
    .images{
       width: 45%;
@@ -332,167 +287,275 @@ selector:pseudo-class-name{property:value}
       
    }
    .images img{
-      width: 250px;
+      width: 230px;
       height: 250px;
-  
+     position: fixed;
       margin-top: 100px;
+      margin-left: 300px;
    }
    #about{
-     margin-left: 8%;
-     margin-top: 25%;
-     margin-right: 50%;
+    
+      margin-top: 13%;
+      padding:5% 5%;
+     
+     
      
    }
    .heading{
-      margin-left: 40%;
      text-align: center;
   
    }
    .heading h2{
-     font-size: 40px;
+      
+     font-size: 35px;
   
    }
    .heading span{
-     font-size: 24px;
-     color: rgb(129, 43, 129);
+     font-size: 22px;
+     color: rgb(80, 13, 119);
+     font-weight: 500;
    }
    .about-content{
+   
      display: grid;
      grid-template-columns: repeat(2,1fr);
      gap: 1rem;
      margin-top: 2rem;
-     font-family: 'Times New Roman', Times, serif;
    }
    .about-img img {
-     width:50%;
+     width:200px;
+     height: 250px;
      border: 2px solid black;
-     border-radius: 5px;
-  
+     border-radius: 10px;
+     margin-left:18%;
   
    }
    .about-text{
-     font-size: 18px;
-     font-weight: 500;
+     margin-left:12%;
+     font-size: 20px;
+     font-weight: 900;
     align-items: center;
   
    }
-   .information{
-     margin: 1rem 0 1.4rem;
-   }
-   .information .name{
-     display: flex;
-     text-align: center;
-     margin-bottom: 16px;
-  
-   }
-   .information .name span{
-     font-weight: 400;
-     margin-left: 10px;
-  
-   }
+
    html{
      scroll-behavior: smooth;
    }
-   #skill{
-    margin-left: 8%;
-    margin-top: 13%;
-    margin-right: 50%;
+   .education{
+     margin-top: 5%;
+   
+   }
+   .edu
+   {
+     margin-top: 30px;
+     margin-bottom: 20px;
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
+     margin-right:20px;
+     font-family: 'Times New Roman', Times, serif;
+     margin-left: 5%;
    }
    
-   .skill-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2rem;
+}
+@media(max-width:900px){
+   nav{
+      display: flex;
+      width: 80%;
+      margin-left: 40px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -55%;
+    
+  }
+  nav ul li{
+   display: inline-block;
+   margin :5px 5px;
+   margin-left: 20px;
+   /* 10px top&bottom and 20px right&left */
+   
+}
+  .title{
+   margin-top: 70px;
+  }
+   .title h1{
+      font-size: 20px;
+      
+      color: rgb(255, 255, 255);
+      margin-bottom: 10px;
    }
-   .skill-img img{
-    width: 60%;
-    object-position: center;
-    padding: 3rem;
+   .title span{ color: rgb(255, 255, 255);
+      font-family: 'Times New Roman', Times, serif;
    }
-   .bar-box{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    margin-bottom: 16px;
-   }
-   .bar-box h2{
-    font-size: 20px;
-    font-weight: 800;
+   .title p{
+      color: #ffffff;
+      line-height: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 800;
   
    }
-   .bar-box span{
-    font-size: 20px;
-    font-weight: 500;
+   .title a{
+      margin-top: -10px;
+      background-color:rgb(224, 137, 137);
+      padding: 10px 18px;
+      text-decoration: none;
+      color: rgb(12, 0, 0);
+      font-weight: bold;
+      display: inline-block;
+      margin:30px 0;
+      border-radius: 10px;
    }
-   .light-bar{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background-color: rgb(202, 235, 125);
-    border-radius: 8px;
+   .images{
+      width: 45%;
+      height: 80%;
+      position: absolute;
+      right: 30px;
+      bottom: 0px;
+      
+      
    }
-   .percent-bar{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background-color: rgb(255, 143, 37);
-    border-radius: 8px;
+   .images img{
+      width: 230px;
+      height: 250px;
+     position: fixed;
+      margin-top: 100px;
+      margin-left: 300px;
    }
-   .html-bar{
-    width: 96%;
+   #about{
+    
+      margin-top: 13%;
+      padding:5% 2%;
+     
+     
+     
    }
-   .css-bar{
-    width: 94%;
+   .heading{
+     text-align: center;
+  
    }
-   .cpp-bar{
-    width: 90%;
+   .heading h2{
+      
+     font-size: 35px;
+  
    }
-   .c-bar{
-    width: 80%;
+   .heading span{
+     font-size: 22px;
+     color: rgb(80, 13, 119);
+     font-weight: 500;
    }
-   #contact{
-    margin-left: 8%;
-    margin-right: 50%;
-    margin-top: 13%;
+   .about-content{
+   
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 1rem;
+     margin-top: 2rem;
+   }
+   .about-text{
+      margin-left: -40px;
+   }
+ 
+}
+@media(max-width:600px)
+{
+   nav{
+      display: flex;
+      width: 90%;
+      margin-left: 60px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -55%;
+    
+
+  }
+  nav .logo{
+   width:40px;
+   height: 40px;
+   border-radius: 50%;
+ 
+   margin-right: 0px;
+   margin-top: 15px;
+}
+  nav ul li{
+   display: inline-block;
+   margin :2px 5px;
+   margin-left: 5px;
+   /* 10px top&bottom and 20px right&left */
+   
+}
+  
+   .title h1{
+      font-size: 20px;
+      
+      color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+      margin-top: -40px;
    }
    
-   .IconDiv{
-      margin-top: 2%;
-      margin-left: 40%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+   .title span{ color: rgb(255, 255, 255);
+      font-family: 'Times New Roman', Times, serif;
    }
-   .icon{
-      width: 50px;
-      height: 50px;
-      border: 2px solid;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: white;
-      margin: 0 10px;
-   }
-   .icon i{
-      font-size: 30px;
-   }
-   .icon i:hover{
-      color: rgb(231, 151, 1);
-   }
-   footer{
-      margin-top: 1rem;
-      font-weight: bolder;
-   }
-   footer p{
-      margin-left: 15%;
-   }
+   .title p{
+      color: #ffffff;
+      line-height: 15px;
+font: 1em sans-serif;
+
   
+   }
+   .title a{
+      margin-top: -10px;
+      background-color:rgb(224, 137, 137);
+      padding: 10px 18px;
+      text-decoration: none;
+      color: rgb(12, 0, 0);
+      font-weight: bold;
+      display: inline-block;
+      margin:30px 0;
+      border-radius: 10px;
+   }
+   
+   #about{
+    
+      margin-top: 13%;
+      padding:5% 5%;
+     
+     
+     
+   }
+   .heading{
+     text-align: center;
+  
+   }
+   .heading h2{
+      
+     font-size: 35px;
+  
+   }
+   .heading span{
+     font-size: 22px;
+     color: rgb(80, 13, 119);
+     font-weight: 500;
+   }
+   .about-content{
+   
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 1rem;
+     margin-top: 2rem;
+   }
+   .about-img img {
+     width:200px;
+     height: 250px;
+     border: 2px solid black;
+     border-radius: 10px;
+     margin-left:18%;
+  
+   }
+   .about-text{
+     margin-left:12%;
+     font-size: 20px;
+     font-weight: 900;
+    align-items: center;
+  
+   }
+ 
 }
